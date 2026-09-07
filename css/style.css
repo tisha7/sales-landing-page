@@ -855,3 +855,16 @@
     }
 }
 
+
+
+/* Mobile hero spacing */
+@media (max-width: 600px) {
+    .pp-hero-grid {
+        gap: 20px !important;
+    }
+
+    .pp-book-stage {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
