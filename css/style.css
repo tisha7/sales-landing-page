@@ -1164,3 +1164,74 @@
         display: none;
     }
 }
+
+/* =========================================
+   RESPONSIVE POLISH — MOBILE SAFETY
+========================================= */
+
+@media (max-width: 600px) {
+  .pp-problem-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pp-problem {
+    padding: 72px 20px;
+  }
+
+  .pp-shift,
+  .pp-chapters,
+  .pp-proof,
+  .pp-faq,
+  .pp-deliverables {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .pp-trust {
+    padding: 20px 16px;
+  }
+
+  .pp-trust-inner {
+    gap: 16px 24px;
+  }
+
+  .pp-trust-item {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .pp-pricing-head h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .pp-main-price {
+    font-size: 48px;
+  }
+
+  .pp-stack-item {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .pp-stack-item > span:first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .pp-stack-item > span.val {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .pp-pricing-head h2 {
+    font-size: 27px;
+  }
+
+  .pp-main-price {
+    font-size: 44px;
+  }
+}
