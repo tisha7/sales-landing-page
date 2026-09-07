@@ -1907,3 +1907,72 @@
     animation:none;
   }
 }
+
+/* =========================================
+   FOOTER — FINAL POLISH
+========================================= */
+
+.pp-footer{
+  position:relative;
+  margin-top:0;
+  padding:42px 20px 32px;
+  text-align:center;
+  background:#0b3f3b;
+  color:rgba(255,255,255,.82);
+  border-top:1px solid rgba(15,118,110,.18);
+}
+
+.pp-footer::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:120px;
+  height:2px;
+  background:linear-gradient(90deg,#87A878,#FF6B5B);
+  border-radius:999px;
+}
+
+.pp-footer .pp-container{
+  max-width:900px;
+}
+
+.pp-footer p{
+  margin:0;
+  font-size:13px;
+  line-height:1.7;
+}
+
+.pp-footer p:first-child{
+  font-weight:700;
+  color:rgba(255,255,255,.92);
+  margin-bottom:8px;
+}
+
+.pp-footer p:last-child{
+  max-width:720px;
+  margin:0 auto;
+  font-size:12px;
+  color:rgba(255,255,255,.55);
+}
+
+@media (max-width:600px){
+  .pp-footer{
+    padding:34px 18px 26px;
+  }
+
+  .pp-footer p{
+    font-size:12px;
+  }
+
+  .pp-footer p:last-child{
+    font-size:11px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .pp-footer::before{
+    transition:none;
+  }
+}
