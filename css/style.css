@@ -860,3 +860,39 @@
     }
 }
 
+
+/* Slightly larger — keep current responsive layout */
+.pp-book-stage .pp-real-book {
+    width: 395px !important;
+    max-width: 395px !important;
+}
+
+.pp-book-stage .pp-real-book img {
+    width: 395px !important;
+    max-width: 395px !important;
+}
+
+@media (max-width: 900px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 350px !important;
+        max-width: 350px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 305px !important;
+        max-width: 305px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 280px !important;
+        max-width: 280px !important;
+    }
+}
+
