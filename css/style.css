@@ -1711,3 +1711,199 @@
     transition:none;
   }
 }
+
+/* =========================================
+   PRICING — PREMIUM OFFER POLISH
+========================================= */
+
+.pp-pricing{
+  position:relative;
+}
+
+.pp-pricing-box{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(15,118,110,.16);
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.07),
+    0 2px 8px rgba(15,118,110,.04);
+  transition:box-shadow .3s ease, transform .3s ease;
+}
+
+.pp-pricing-box::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:4px;
+  background:linear-gradient(
+    90deg,
+    #87A878,
+    #FF6B5B,
+    #87A878
+  );
+  background-size:200% 100%;
+  animation:ppOfferGradient 5s linear infinite;
+}
+
+.pp-pricing-box::after{
+  content:"";
+  position:absolute;
+  width:280px;
+  height:280px;
+  top:-150px;
+  right:-120px;
+  border-radius:50%;
+  background:rgba(135,168,120,.07);
+  pointer-events:none;
+}
+
+.pp-pricing-box > *{
+  position:relative;
+  z-index:1;
+}
+
+.pp-pricing-head{
+  position:relative;
+}
+
+.pp-badge-pop{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:7px 13px;
+  border-radius:999px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+  box-shadow:0 5px 14px rgba(255,107,91,.12);
+}
+
+.pp-pricing-head h2{
+  margin-top:16px;
+  margin-bottom:10px;
+}
+
+.pp-stack-list{
+  margin-top:28px;
+}
+
+.pp-stack-item{
+  position:relative;
+  padding:15px 16px;
+  border-radius:12px;
+  border:1px solid rgba(15,118,110,.08);
+  background:rgba(255,255,255,.55);
+  transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.pp-stack-item + .pp-stack-item{
+  margin-top:10px;
+}
+
+.pp-stack-item:hover{
+  transform:translateX(3px);
+  border-color:rgba(15,118,110,.17);
+  box-shadow:0 6px 18px rgba(0,0,0,.045);
+}
+
+.pp-stack-item .val{
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.pp-evergreen-timer{
+  position:relative;
+  margin-top:22px;
+  padding:12px 15px;
+  border-radius:12px;
+  text-align:center;
+  font-size:13px;
+  border:1px solid rgba(255,107,91,.16);
+  background:rgba(255,107,91,.055);
+}
+
+.pp-evergreen-timer strong{
+  font-size:16px;
+  font-weight:900;
+}
+
+.pp-price-tag{
+  display:flex;
+  align-items:baseline;
+  justify-content:center;
+  gap:12px;
+  margin:20px 0 18px;
+}
+
+.pp-old-price{
+  opacity:.55;
+  font-size:18px;
+}
+
+.pp-main-price{
+  font-size:54px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+
+.pp-pricing .pp-primary-btn{
+  box-shadow:
+    0 10px 24px rgba(255,107,91,.20),
+    0 3px 8px rgba(0,0,0,.06);
+  transition:transform .22s ease, box-shadow .22s ease;
+}
+
+.pp-pricing .pp-primary-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:
+    0 15px 30px rgba(255,107,91,.25),
+    0 5px 12px rgba(0,0,0,.08);
+}
+
+@keyframes ppOfferGradient{
+  0%{background-position:0% 50%;}
+  100%{background-position:200% 50%;}
+}
+
+@media (max-width:600px){
+  .pp-pricing-box{
+    border-radius:18px;
+  }
+
+  .pp-stack-item{
+    padding:13px 14px;
+    font-size:14px;
+  }
+
+  .pp-stack-item:hover{
+    transform:none;
+  }
+
+  .pp-main-price{
+    font-size:46px;
+  }
+
+  .pp-old-price{
+    font-size:16px;
+  }
+
+  .pp-pricing .pp-primary-btn:hover{
+    transform:none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .pp-pricing-box,
+  .pp-stack-item,
+  .pp-pricing .pp-primary-btn{
+    transition:none;
+  }
+
+  .pp-pricing-box::before{
+    animation:none;
+  }
+}
