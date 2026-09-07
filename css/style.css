@@ -949,3 +949,21 @@
         max-width: 430px !important;
     }
 }
+
+
+/* Mobile book size adjustment */
+@media (max-width: 600px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 330px !important;
+        max-width: 330px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 310px !important;
+        max-width: 310px !important;
+    }
+}
