@@ -986,3 +986,57 @@
     }
 }
 
+
+/* ===== STANDARD BOOK MOCKUP SIZE ===== */
+
+.pp-book-stage .pp-real-book {
+    width: 360px !important;
+    max-width: 360px !important;
+    flex: 0 0 360px !important;
+}
+
+.pp-book-stage .pp-real-book img {
+    width: 360px !important;
+    max-width: 360px !important;
+    height: auto !important;
+}
+
+@media (max-width: 900px) {
+    .pp-book-stage .pp-real-book {
+        width: 320px !important;
+        max-width: 320px !important;
+        flex: 0 0 320px !important;
+    }
+
+    .pp-book-stage .pp-real-book img {
+        width: 320px !important;
+        max-width: 320px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .pp-book-stage .pp-real-book {
+        width: 275px !important;
+        max-width: 275px !important;
+        flex: 0 0 275px !important;
+    }
+
+    .pp-book-stage .pp-real-book img {
+        width: 275px !important;
+        max-width: 275px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .pp-book-stage .pp-real-book {
+        width: 250px !important;
+        max-width: 250px !important;
+        flex: 0 0 250px !important;
+    }
+
+    .pp-book-stage .pp-real-book img {
+        width: 250px !important;
+        max-width: 250px !important;
+    }
+}
+
