@@ -39,52 +39,40 @@ document.addEventListener("DOMContentLoaded", function () {
   const hero = document.querySelector(".pp-hero");
   const book = document.querySelector(".pp-hero .pp-real-book");
 
-  if (hero && book && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    let targetX = 0;
-    let targetY = 0;
-    let currentX = 0;
-    let currentY = 0;
-
-    function animateBook() {
-      currentX += (targetX - currentX) * 0.08;
-      currentY += (targetY - currentY) * 0.08;
-
-      book.style.transform =
-        "translate3d(" + currentX + "px," + currentY + "px,0)";
-
-      requestAnimationFrame(animateBook);
-    }
+  if (
+    hero &&
+    book &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
 
     hero.addEventListener("mousemove", function (e) {
       const rect = hero.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
 
-      targetX = x * 8;
-      targetY = y * 6;
+      const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+      const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+
+      book.style.setProperty("--hero-mx", (x * 5).toFixed(2) + "px");
+      book.style.setProperty("--hero-my", (y * 4).toFixed(2) + "px");
     });
 
     hero.addEventListener("mouseleave", function () {
-      targetX = 0;
-      targetY = 0;
+      book.style.setProperty("--hero-mx", "0px");
+      book.style.setProperty("--hero-my", "0px");
     });
 
-    animateBook();
-
     hero.addEventListener("touchstart", function () {
-      book.style.transition = "transform .2s ease";
-      book.style.transform = "scale(.985)";
+      book.classList.add("is-touching");
     }, { passive: true });
 
     hero.addEventListener("touchend", function () {
-      book.style.transition = "transform .35s ease";
-      book.style.transform = "scale(1)";
+      book.classList.remove("is-touching");
+    }, { passive: true });
+
+    hero.addEventListener("touchcancel", function () {
+      book.classList.remove("is-touching");
     }, { passive: true });
   }
 
-  /* =========================
-     EVERGREEN TIMER (15 Min Loop)
-  ========================= */
   let timeRemaining = 15 * 60;
   const clockElement = document.getElementById("pp-evergreen-clock");
 
