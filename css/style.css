@@ -206,11 +206,11 @@
 
   display:grid;
 
-  grid-template-columns:1.05fr .95fr;
+  grid-template-columns:1fr 1fr;
 
   align-items:center;
 
-  gap:70px;
+  gap:50px;
 
 }
 
@@ -929,3 +929,23 @@
     }
 }
 
+
+
+/* Final desktop book size adjustment */
+@media (min-width: 901px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 430px !important;
+        max-width: 430px !important;
+    }
+}
+
+
+/* Final desktop book size adjustment */
+@media (min-width: 901px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 430px !important;
+        max-width: 430px !important;
+    }
+}
