@@ -1235,3 +1235,98 @@
     font-size: 44px;
   }
 }
+
+/* =========================================
+   CHECKOUT — PREMIUM CONVERSION POLISH
+========================================= */
+
+.pp-pricing-box{
+  position:relative;
+  overflow:hidden;
+}
+
+.pp-pricing-box::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:4px;
+  background:linear-gradient(90deg,#87A878,#FF6B5B,#87A878);
+  background-size:200% 100%;
+  animation:ppCheckoutGradient 4s linear infinite;
+}
+
+.pp-stack-list{
+  position:relative;
+}
+
+.pp-stack-item{
+  transition:transform .25s ease, background .25s ease;
+}
+
+.pp-stack-item:hover{
+  transform:translateX(4px);
+  background:rgba(135,168,120,.06);
+}
+
+.pp-evergreen-timer{
+  border:1px solid rgba(255,107,91,.22);
+  box-shadow:0 8px 24px rgba(255,107,91,.06);
+}
+
+.pp-price-tag{
+  position:relative;
+}
+
+.pp-main-price{
+  text-shadow:0 8px 24px rgba(255,107,91,.16);
+}
+
+.pp-pricing-box > .pp-primary-btn{
+  box-shadow:0 14px 30px rgba(255,107,91,.28);
+}
+
+.pp-pricing-box > .pp-primary-btn:hover{
+  box-shadow:0 20px 38px rgba(255,107,91,.38);
+}
+
+@keyframes ppCheckoutGradient{
+  0%{background-position:0% 50%;}
+  100%{background-position:200% 50%;}
+}
+
+@media (max-width:600px){
+  .pp-pricing-box{
+    border-radius:18px;
+  }
+
+  .pp-pricing-head h2{
+    max-width:340px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .pp-stack-item:hover{
+    transform:none;
+  }
+
+  .pp-evergreen-timer{
+    font-size:13px;
+    line-height:1.5;
+  }
+
+  .pp-price-tag{
+    margin-top:4px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .pp-pricing-box::before{
+    animation:none;
+  }
+
+  .pp-stack-item{
+    transition:none;
+  }
+}
