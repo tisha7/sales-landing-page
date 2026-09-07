@@ -797,11 +797,21 @@
     }
 }
 /* =========================================
-   REAL BOOK MOCKUP — RESPONSIVE FIX
+
+/* =========================================
+   RESPONSIVE BOOK MOCKUP
 ========================================= */
 
+.pp-book-stage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pp-real-book {
-    width: min(430px, 100%);
+    width: 380px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -811,7 +821,7 @@
 .pp-real-book img {
     display: block;
     width: 100%;
-    max-width: 430px;
+    max-width: 380px;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 28px 28px rgba(0, 0, 0, 0.22));
@@ -819,224 +829,34 @@
 
 /* Tablet */
 @media (max-width: 900px) {
-    .pp-book-stage {
-        min-height: auto;
-        padding: 10px 0 50px;
-    }
-
     .pp-real-book {
-        width: min(400px, 90vw);
+        width: 330px;
     }
 
     .pp-real-book img {
-        max-width: 400px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .pp-book-stage {
-        min-height: auto;
-        padding: 0 10px 60px;
-    }
-
-    .pp-real-book {
-        width: min(330px, 82vw);
-    }
-
-    .pp-real-book img {
-        width: 100%;
         max-width: 330px;
-        height: auto;
-    }
-
-    .pp-floating-proof {
-        right: 2%;
-        bottom: 25px;
-        padding: 12px 15px;
-    }
-
-    .pp-floating-proof strong {
-        font-size: 18px;
-    }
-
-    .pp-floating-proof span {
-        font-size: 10px;
-    }
-}
-/* FINAL FIX — Parentura mock.png responsive */
-.pp-real-book {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pp-real-book img {
-    display: block !important;
-    width: 100% !important;
-    max-width: 360px !important;
-    height: auto !important;
-    object-fit: contain;
-}
-
-/* Desktop */
-@media (min-width: 901px) {
-    .pp-real-book {
-        max-width: 360px;
-    }
-
-    .pp-real-book img {
-        max-width: 360px !important;
-    }
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-    .pp-real-book {
-        max-width: 320px;
-    }
-
-    .pp-real-book img {
-        max-width: 320px !important;
     }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
     .pp-real-book {
-        width: 78vw;
-        max-width: 290px;
+        width: 285px;
     }
 
     .pp-real-book img {
-        width: 100% !important;
-        max-width: 290px !important;
-    }
-}
-
-/* Small phones */
-@media (max-width: 400px) {
-    .pp-real-book {
-        width: 72vw;
-        max-width: 260px;
-    }
-
-    .pp-real-book img {
-        max-width: 260px !important;
-    }
-}
-
-
-/* ===== MOCKUP SIZE OVERRIDE ===== */
-
-.pp-book-stage .pp-real-book {
-    width: 320px !important;
-    max-width: 320px !important;
-    flex: 0 0 320px !important;
-}
-
-.pp-book-stage .pp-real-book img {
-    width: 320px !important;
-    max-width: 320px !important;
-    height: auto !important;
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-    .pp-book-stage .pp-real-book {
-        width: 280px !important;
-        max-width: 280px !important;
-        flex: 0 0 280px !important;
-    }
-
-    .pp-book-stage .pp-real-book img {
-        width: 280px !important;
-        max-width: 280px !important;
-    }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .pp-book-stage .pp-real-book {
-        width: 240px !important;
-        max-width: 240px !important;
-        flex: 0 0 240px !important;
-    }
-
-    .pp-book-stage .pp-real-book img {
-        width: 240px !important;
-        max-width: 240px !important;
+        max-width: 285px;
     }
 }
 
 /* Small mobile */
 @media (max-width: 400px) {
-    .pp-book-stage .pp-real-book {
-        width: 215px !important;
-        max-width: 215px !important;
-        flex: 0 0 215px !important;
+    .pp-real-book {
+        width: 260px;
     }
 
-    .pp-book-stage .pp-real-book img {
-        width: 215px !important;
-        max-width: 215px !important;
-    }
-}
-
-
-/* ===== STANDARD BOOK MOCKUP SIZE ===== */
-
-.pp-book-stage .pp-real-book {
-    width: 360px !important;
-    max-width: 360px !important;
-    flex: 0 0 360px !important;
-}
-
-.pp-book-stage .pp-real-book img {
-    width: 360px !important;
-    max-width: 360px !important;
-    height: auto !important;
-}
-
-@media (max-width: 900px) {
-    .pp-book-stage .pp-real-book {
-        width: 320px !important;
-        max-width: 320px !important;
-        flex: 0 0 320px !important;
-    }
-
-    .pp-book-stage .pp-real-book img {
-        width: 320px !important;
-        max-width: 320px !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .pp-book-stage .pp-real-book {
-        width: 275px !important;
-        max-width: 275px !important;
-        flex: 0 0 275px !important;
-    }
-
-    .pp-book-stage .pp-real-book img {
-        width: 275px !important;
-        max-width: 275px !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .pp-book-stage .pp-real-book {
-        width: 250px !important;
-        max-width: 250px !important;
-        flex: 0 0 250px !important;
-    }
-
-    .pp-book-stage .pp-real-book img {
-        width: 250px !important;
-        max-width: 250px !important;
+    .pp-real-book img {
+        max-width: 260px;
     }
 }
 
