@@ -967,3 +967,21 @@
         max-width: 310px !important;
     }
 }
+
+
+/* Mobile book mockup - larger */
+@media (max-width: 600px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 380px !important;
+        max-width: 380px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 350px !important;
+        max-width: 350px !important;
+    }
+}
