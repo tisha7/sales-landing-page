@@ -1496,3 +1496,130 @@
     transition:none;
   }
 }
+
+/* =========================================
+   TESTIMONIALS — SOCIAL PROOF POLISH
+========================================= */
+
+.pp-proof{
+  position:relative;
+}
+
+.pp-proof-head{
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+.pp-proof-head h2{
+  margin-bottom:12px;
+}
+
+.pp-proof-grid{
+  position:relative;
+}
+
+.pp-testi-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(15,118,110,.10);
+  box-shadow:0 8px 24px rgba(0,0,0,.045);
+  transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+
+.pp-testi-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg,#87A878,#FF6B5B,#87A878);
+  background-size:200% 100%;
+  opacity:.75;
+  animation:ppProofGradient 5s linear infinite;
+}
+
+.pp-testi-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(15,118,110,.20);
+  box-shadow:0 18px 38px rgba(0,0,0,.09);
+}
+
+.pp-stars{
+  letter-spacing:2px;
+  font-size:15px;
+  line-height:1;
+  margin-bottom:16px;
+}
+
+.pp-testi-card > p{
+  font-size:15px;
+  line-height:1.75;
+}
+
+.pp-testi-user{
+  margin-top:22px;
+  padding-top:17px;
+  border-top:1px solid rgba(15,118,110,.08);
+}
+
+.pp-avatar{
+  box-shadow:0 4px 12px rgba(15,118,110,.10);
+}
+
+.pp-user-info strong{
+  font-weight:800;
+}
+
+.pp-user-info span{
+  font-size:12px;
+  line-height:1.4;
+}
+
+@keyframes ppProofGradient{
+  0%{background-position:0% 50%;}
+  100%{background-position:200% 50%;}
+}
+
+@media (max-width:900px){
+  .pp-testi-card:hover{
+    transform:translateY(-2px);
+  }
+}
+
+@media (max-width:600px){
+  .pp-proof-head{
+    padding-left:4px;
+    padding-right:4px;
+  }
+
+  .pp-proof-head h2{
+    font-size:30px;
+    line-height:1.2;
+  }
+
+  .pp-testi-card{
+    border-radius:16px;
+  }
+
+  .pp-testi-card:hover{
+    transform:none;
+  }
+
+  .pp-testi-card > p{
+    font-size:14px;
+    line-height:1.7;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .pp-testi-card{
+    transition:none;
+  }
+
+  .pp-testi-card::before{
+    animation:none;
+  }
+}
