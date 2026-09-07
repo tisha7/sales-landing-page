@@ -864,3 +864,68 @@
         font-size: 10px;
     }
 }
+/* FINAL FIX — Parentura mock.png responsive */
+.pp-real-book {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp-real-book img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    object-fit: contain;
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+    .pp-real-book {
+        max-width: 360px;
+    }
+
+    .pp-real-book img {
+        max-width: 360px !important;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .pp-real-book {
+        max-width: 320px;
+    }
+
+    .pp-real-book img {
+        max-width: 320px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .pp-real-book {
+        width: 78vw;
+        max-width: 290px;
+    }
+
+    .pp-real-book img {
+        width: 100% !important;
+        max-width: 290px !important;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .pp-real-book {
+        width: 72vw;
+        max-width: 260px;
+    }
+
+    .pp-real-book img {
+        max-width: 260px !important;
+    }
+}
+
