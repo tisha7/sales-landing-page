@@ -96,7 +96,7 @@
 
   0%,100%{transform:translateY(0);}
 
-  50%{transform:translateY(-8px);}
+  50%{transform:translateY(-13px);}
 
 }
 
@@ -886,8 +886,8 @@
     top: -180px;
     right: -120px;
     border-radius: 50%;
-    background: rgba(135,168,120,.10);
-    filter: blur(12px);
+    background: rgba(135,168,120,.13);
+    filter: blur(18px);
     pointer-events: none;
     z-index: -1;
     animation: ppHeroOrb 8s ease-in-out infinite;
@@ -901,32 +901,32 @@
 .pp-hero .pp-primary-btn,
 .pp-hero .pp-secondary-note {
     opacity: 0;
-    animation: ppHeroReveal .85s cubic-bezier(.22,1,.36,1) forwards;
+    animation: ppHeroReveal 1s cubic-bezier(.22,1,.36,1) forwards;
 }
 
 .pp-hero .pp-eyebrow {
-    transform: translateY(24px);
-    animation-delay: .08s;
+    transform: translateY(38px);
+    animation-delay: .05s;
 }
 
 .pp-hero h1 {
-    transform: translateY(28px);
-    animation-delay: .18s;
+    transform: translateY(44px);
+    animation-delay: .16s;
 }
 
 .pp-hero .pp-hero-sub {
-    transform: translateY(24px);
-    animation-delay: .30s;
+    transform: translateY(36px);
+    animation-delay: .28s;
 }
 
 .pp-hero .pp-primary-btn {
-    transform: translateY(24px);
-    animation-delay: .42s;
+    transform: translateY(34px);
+    animation-delay: .40s;
 }
 
 .pp-hero .pp-secondary-note {
-    transform: translateY(18px);
-    animation-delay: .52s;
+    transform: translateY(28px);
+    animation-delay: .50s;
 }
 
 /* ===== BOOK ===== */
@@ -979,7 +979,7 @@
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(255,255,255,.28),
+        rgba(255,255,255,.42),
         transparent
     );
     transform: skewX(-18deg);
@@ -991,7 +991,7 @@
 }
 
 .pp-primary-btn:hover::after {
-    animation: ppButtonShine .7s ease forwards;
+    animation: ppButtonShine .8s cubic-bezier(.22,1,.36,1) forwards;
 }
 
 .pp-primary-btn:active {
@@ -1016,7 +1016,7 @@
 @keyframes ppHeroBookIn {
     from {
         opacity: 0;
-        transform: translateY(35px) scale(.94);
+        transform: translate3d(0,55px,0) scale(.90);
     }
     to {
         opacity: 1;
@@ -1033,7 +1033,7 @@
     50% {
         transform:
             translate3d(var(--hero-mx), var(--hero-my), 0)
-            translateY(-8px);
+            translateY(-13px);
     }
 }
 
@@ -1042,7 +1042,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-7px);
+        transform: translateY(-11px);
     }
 }
 
@@ -1052,7 +1052,7 @@
         opacity: .7;
     }
     50% {
-        transform: scale(1.08) translate3d(-10px,12px,0);
+        transform: scale(1.14) translate3d(-16px,18px,0);
         opacity: 1;
     }
 }

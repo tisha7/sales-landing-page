@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
       const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
 
-      book.style.setProperty("--hero-mx", (x * 5).toFixed(2) + "px");
-      book.style.setProperty("--hero-my", (y * 4).toFixed(2) + "px");
+      book.style.setProperty("--hero-mx", (x * 9).toFixed(2) + "px");
+      book.style.setProperty("--hero-my", (y * 7).toFixed(2) + "px");
     });
 
     hero.addEventListener("mouseleave", function () {
