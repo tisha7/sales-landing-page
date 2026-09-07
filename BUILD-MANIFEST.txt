@@ -1,0 +1,5 @@
+Parentura – The AI Parent Playbook
+Build type: Static landing page
+Source: Client-supplied original HTML
+Status: Client-delivery structure
+Checkout: Placeholder retained; replace in js/config.js before launch
