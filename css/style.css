@@ -896,3 +896,36 @@
     }
 }
 
+
+/* ===== FINAL BOOK SIZE ===== */
+
+.pp-book-stage .pp-real-book,
+.pp-book-stage .pp-real-book img {
+    width: 500px !important;
+    max-width: 500px !important;
+}
+
+@media (max-width: 900px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 400px !important;
+        max-width: 400px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 330px !important;
+        max-width: 330px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .pp-book-stage .pp-real-book,
+    .pp-book-stage .pp-real-book img {
+        width: 300px !important;
+        max-width: 300px !important;
+    }
+}
+
