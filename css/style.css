@@ -802,16 +802,20 @@
    RESPONSIVE BOOK MOCKUP
 ========================================= */
 
+
+/* ===== CLEAN RESPONSIVE BOOK MOCKUP ===== */
+
 .pp-book-stage {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
 
 .pp-real-book {
-    width: 380px;
-    max-width: 100%;
+    width: 430px;
+    max-width: none;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -820,168 +824,34 @@
 
 .pp-real-book img {
     display: block;
-    width: 100%;
-    max-width: 380px;
+    width: 430px;
+    max-width: none;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 28px 28px rgba(0, 0, 0, 0.22));
 }
 
-/* Tablet */
 @media (max-width: 900px) {
-    .pp-real-book {
-        width: 330px;
-    }
-
+    .pp-real-book,
     .pp-real-book img {
-        max-width: 330px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .pp-real-book {
-        width: 285px;
-    }
-
-    .pp-real-book img {
-        max-width: 285px;
-    }
-}
-
-/* Small mobile */
-@media (max-width: 400px) {
-    .pp-real-book {
-        width: 260px;
-    }
-
-    .pp-real-book img {
-        max-width: 260px;
-    }
-}
-
-
-/* Slightly larger — keep current responsive layout */
-.pp-book-stage .pp-real-book {
-    width: 395px !important;
-    max-width: 395px !important;
-}
-
-.pp-book-stage .pp-real-book img {
-    width: 395px !important;
-    max-width: 395px !important;
-}
-
-@media (max-width: 900px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 350px !important;
-        max-width: 350px !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 305px !important;
-        max-width: 305px !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 280px !important;
-        max-width: 280px !important;
-    }
-}
-
-
-/* ===== FINAL BOOK SIZE ===== */
-
-.pp-book-stage .pp-real-book,
-.pp-book-stage .pp-real-book img {
-    width: 500px !important;
-    max-width: 500px !important;
-}
-
-@media (max-width: 900px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 400px !important;
-        max-width: 400px !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 330px !important;
-        max-width: 330px !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 300px !important;
-        max-width: 300px !important;
-    }
-}
-
-
-
-/* Final desktop book size adjustment */
-@media (min-width: 901px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 430px !important;
-        max-width: 430px !important;
-    }
-}
-
-
-/* Final desktop book size adjustment */
-@media (min-width: 901px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 430px !important;
-        max-width: 430px !important;
-    }
-}
-
-
-/* Mobile book size adjustment */
-@media (max-width: 600px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 330px !important;
-        max-width: 330px !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
-        width: 310px !important;
-        max-width: 310px !important;
-    }
-}
-
-
-/* Mobile book mockup - larger */
-@media (max-width: 600px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
         width: 380px !important;
         max-width: 380px !important;
     }
 }
 
-@media (max-width: 400px) {
-    .pp-book-stage .pp-real-book,
-    .pp-book-stage .pp-real-book img {
+@media (max-width: 600px) {
+    .pp-real-book,
+    .pp-real-book img {
         width: 350px !important;
         max-width: 350px !important;
     }
 }
+
+@media (max-width: 400px) {
+    .pp-real-book,
+    .pp-real-book img {
+        width: 330px !important;
+        max-width: 330px !important;
+    }
+}
+
