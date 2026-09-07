@@ -796,3 +796,71 @@
         max-width: 350px;
     }
 }
+/* =========================================
+   REAL BOOK MOCKUP — RESPONSIVE FIX
+========================================= */
+
+.pp-real-book {
+    width: min(430px, 100%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp-real-book img {
+    display: block;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 28px 28px rgba(0, 0, 0, 0.22));
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .pp-book-stage {
+        min-height: auto;
+        padding: 10px 0 50px;
+    }
+
+    .pp-real-book {
+        width: min(400px, 90vw);
+    }
+
+    .pp-real-book img {
+        max-width: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .pp-book-stage {
+        min-height: auto;
+        padding: 0 10px 60px;
+    }
+
+    .pp-real-book {
+        width: min(330px, 82vw);
+    }
+
+    .pp-real-book img {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+    }
+
+    .pp-floating-proof {
+        right: 2%;
+        bottom: 25px;
+        padding: 12px 15px;
+    }
+
+    .pp-floating-proof strong {
+        font-size: 18px;
+    }
+
+    .pp-floating-proof span {
+        font-size: 10px;
+    }
+}
