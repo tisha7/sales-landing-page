@@ -1,0 +1,1390 @@
+<div class="parentura-pro">
+
+
+
+<style>
+
+/* =========================
+
+   IMPORT FONTS
+
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+
+
+/* =========================
+
+   ROOT VARIABLES
+
+========================= */
+
+.parentura-pro{
+
+  --blue:#87A878;
+
+  --blue-dark:#6B8F5C;
+
+  --blue-light:#A8C99A;
+
+  --coral:#FF6B5B;
+
+  --coral-hover:#FF5242;
+
+  --sand:#F5F0E6;
+
+  --cream:#FAF9F6;
+
+  --text:#2D3142;
+
+  --muted:#6B7280;
+
+  --white:#fff;
+
+  --radius-sm:8px;
+
+  --radius-md:12px;
+
+  --radius-lg:16px;
+
+  --radius-xl:22px;
+
+  font-family:'Plus Jakarta Sans','Inter',sans-serif;
+
+  color:var(--text);
+
+  background:var(--cream);
+
+  overflow-x:hidden;
+
+  scroll-behavior:smooth;
+
+  -webkit-overflow-scrolling:touch;
+
+}
+
+
+
+.parentura-pro *{
+
+  box-sizing:border-box;
+
+}
+
+
+
+.parentura-pro a{
+
+  text-decoration:none;
+
+}
+
+
+
+/* =========================
+
+   ANIMATIONS & REVEAL
+
+========================= */
+
+@keyframes ppFadeInUp{
+
+  from{ opacity:0; transform:translateY(30px); }
+
+  to{ opacity:1; transform:translateY(0); }
+
+}
+
+
+
+@keyframes ppFloat{
+
+  0%,100%{transform:translateY(0);}
+
+  50%{transform:translateY(-8px);}
+
+}
+
+
+
+@keyframes ppGlowPulse{
+
+  0%,100%{ opacity:0.12; transform:scale(1); }
+
+  50%{ opacity:0.18; transform:scale(1.05); }
+
+}
+
+
+
+.pp-reveal{
+
+  opacity:0;
+
+  transform:translateY(40px);
+
+  transition:all 0.8s cubic-bezier(0.4,0,0.2,1);
+
+}
+
+
+
+.pp-reveal.active{
+
+  opacity:1;
+
+  transform:translateY(0);
+
+}
+
+
+
+.pp-container{
+
+  max-width:1180px;
+
+  margin:auto;
+
+  position:relative;
+
+  z-index:2;
+
+}
+
+
+
+/* =========================
+
+   TOP ANNOUNCEMENT BAR
+
+========================= */
+
+.pp-offer-bar{
+
+  background:#2D3142;
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:12px 20px;
+
+  font-size:13px;
+
+  font-weight:600;
+
+  letter-spacing:.1px;
+
+}
+
+.pp-offer-bar strong{ color:#FFD8CF; }
+
+
+
+/* =========================
+
+   HERO SECTION
+
+========================= */
+
+.pp-hero{
+
+  position:relative;
+
+  padding:82px 24px 90px;
+
+  background:
+
+    radial-gradient(circle at 80% 15%, rgba(135,168,120,.12), transparent 35%),
+
+    radial-gradient(circle at 20% 85%, rgba(255,107,91,.08), transparent 30%),
+
+    linear-gradient(180deg, #FAF9F6 0%, #F5F0E6 100%);
+
+  overflow:hidden;
+
+}
+
+
+
+.pp-hero-grid{
+
+  display:grid;
+
+  grid-template-columns:1.05fr .95fr;
+
+  align-items:center;
+
+  gap:70px;
+
+}
+
+
+
+.pp-eyebrow{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  padding:8px 13px;
+
+  border-radius:100px;
+
+  background:rgba(255,255,255,.85);
+
+  backdrop-filter:blur(10px);
+
+  color:var(--blue-dark);
+
+  font-size:12px;
+
+  font-weight:800;
+
+  text-transform:uppercase;
+
+  letter-spacing:1px;
+
+  margin-bottom:22px;
+
+  border:1px solid rgba(135,168,120,.15);
+
+}
+
+
+
+.pp-eyebrow span{
+
+  width:7px; height:7px;
+
+  border-radius:50%;
+
+  background:var(--coral);
+
+}
+
+
+
+.pp-hero h1{
+
+  margin:0;
+
+  font-size:clamp(42px,5vw,64px);
+
+  line-height:1.08;
+
+  letter-spacing:-2.5px;
+
+  font-weight:800;
+
+  color:var(--text);
+
+}
+
+
+
+.pp-hero h1 em{
+
+  color:var(--blue-dark);
+
+  font-style:normal;
+
+  position:relative;
+
+}
+
+
+
+.pp-hero-sub{
+
+  margin:25px 0 30px;
+
+  max-width:610px;
+
+  font-size:18px;
+
+  line-height:1.75;
+
+  color:var(--muted);
+
+}
+
+
+
+.pp-primary-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:10px;
+
+  min-height:58px;
+
+  padding:0 32px;
+
+  border-radius:var(--radius-md);
+
+  background:linear-gradient(135deg, #FF6B5B 0%, #FF5242 100%);
+
+  color:#fff!important;
+
+  font-size:16px;
+
+  font-weight:800;
+
+  box-shadow:0 12px 28px rgba(255,107,91,.25);
+
+  transition:all 0.3s ease;
+
+  cursor:pointer;
+
+}
+
+
+
+.pp-primary-btn:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:0 18px 36px rgba(255,107,91,.35);
+
+}
+
+
+
+.pp-secondary-note{
+
+  margin-top:14px;
+
+  font-size:12px;
+
+  color:#7B8794;
+
+}
+
+
+
+/* =========================
+
+   BOOK STAGE
+
+========================= */
+
+.pp-book-stage{
+
+  position:relative;
+
+  min-height:480px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+}
+
+
+
+.pp-book{
+
+  position:relative;
+
+  width:300px;
+
+  min-height:420px;
+
+  padding:40px 32px;
+
+  border-radius:7px var(--radius-lg) var(--radius-lg) 7px;
+
+  background:linear-gradient(135deg,#7FB36D,#6B9F5C);
+
+  box-shadow:0 25px 50px rgba(45,49,66,.2);
+
+  transform:perspective(1000px) rotateY(-12deg) rotateX(3deg);
+
+  color:#fff;
+
+  transition:transform 0.5s ease;
+
+}
+
+
+
+.pp-book:hover{
+
+  transform:perspective(1000px) rotateY(-4deg) rotateX(2deg) scale(1.02);
+
+}
+
+
+
+.pp-book-brand{ font-size:11px; font-weight:800; letter-spacing:2px; opacity:.85; }
+
+.pp-book h2{ margin:60px 0 16px; font-size:36px; line-height:1.05; letter-spacing:-1.5px; }
+
+.pp-book p{ margin:0; font-size:13px; line-height:1.6; opacity:.9; }
+
+.pp-book-author{ position:absolute; bottom:30px; font-size:11px; font-weight:700; letter-spacing:1px; }
+
+
+
+.pp-floating-proof{
+
+  position:absolute; right:0; bottom:40px;
+
+  background:rgba(255,255,255,.95);
+
+  backdrop-filter:blur(10px);
+
+  border-radius:var(--radius-lg);
+
+  padding:15px 20px;
+
+  box-shadow:0 15px 35px rgba(45,49,66,.12);
+
+  border:1px solid rgba(135,168,120,.2);
+
+}
+
+.pp-floating-proof strong{ display:block; font-size:20px; color:var(--text); }
+
+.pp-floating-proof span{ font-size:11px; color:var(--muted); }
+
+
+
+/* =========================
+
+   TRUST STRIP
+
+========================= */
+
+.pp-trust{
+
+  border-top:1px solid #E8E4DC;
+
+  border-bottom:1px solid #E8E4DC;
+
+  background:#fff;
+
+  padding:24px 0;
+
+}
+
+.pp-trust-inner{
+
+  display:flex; justify-content:center; gap:50px; flex-wrap:wrap;
+
+}
+
+.pp-trust-item{
+
+  display:flex; align-items:center; gap:10px; font-size:13px; color:#52606D; font-weight:700;
+
+}
+
+.pp-trust-icon{
+
+  width:28px; height:28px; border-radius:50%; background:rgba(135,168,120,.15);
+
+  color:var(--blue-dark); display:flex; align-items:center; justify-content:center; font-weight:800;
+
+}
+
+
+
+/* =========================
+
+   PROBLEM & AGITATION
+
+========================= */
+
+.pp-problem{ padding:100px 24px; background:#fff; }
+
+.pp-section-label{
+
+  color:var(--coral); text-transform:uppercase; letter-spacing:2px; font-size:11px; font-weight:800; margin-bottom:14px;
+
+}
+
+.pp-problem-grid{ display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; }
+
+.pp-problem h2{ margin:0; font-size:clamp(32px,4vw,48px); line-height:1.15; letter-spacing:-1.8px; }
+
+.pp-problem-copy{ font-size:17px; line-height:1.8; color:var(--muted); }
+
+.pp-problem-list{ display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-top:30px; }
+
+.pp-problem-item{
+
+  padding:16px; border-radius:var(--radius-md); background:#F9FAFB; border:1px solid #E5E7EB;
+
+  font-size:13px; font-weight:600; color:var(--text); display:flex; align-items:center; gap:8px;
+
+}
+
+.pp-problem-item span{ color:var(--coral); font-size:16px; }
+
+
+
+/* =========================
+
+   SHIFT SECTION
+
+========================= */
+
+.pp-shift{ padding:100px 24px; background:var(--sand); }
+
+.pp-shift-head{ max-width:700px; margin:0 auto 50px; text-align:center; }
+
+.pp-shift-head h2{ margin:0; font-size:clamp(32px,4vw,46px); letter-spacing:-1.5px; }
+
+.pp-shift-grid{ max-width:1000px; margin:auto; display:grid; grid-template-columns:1fr 60px 1fr; align-items:center; }
+
+.pp-way{ padding:35px; border-radius:var(--radius-lg); min-height:280px; }
+
+.pp-way.old{ background:rgba(255,255,255,.5); border:1px solid rgba(45,49,66,.08); }
+
+.pp-way.new{ background:#fff; border:2px solid var(--blue); box-shadow:0 15px 35px rgba(45,49,66,.05); }
+
+.pp-way small{ display:block; margin-bottom:10px; text-transform:uppercase; font-size:10px; font-weight:800; color:var(--muted); }
+
+.pp-way.new small{ color:var(--blue-dark); }
+
+.pp-way h3{ margin:0 0 15px; font-size:22px; }
+
+.pp-way ul{ padding:0; list-style:none; margin:0; }
+
+.pp-way li{ padding:6px 0; font-size:14px; color:#5E6B77; position:relative; padding-left:20px; }
+
+.pp-way li::before{ content:"•"; position:absolute; left:0; color:var(--coral); font-size:18px; }
+
+.pp-arrow{ text-align:center; font-size:24px; color:var(--blue-dark); font-weight:800; }
+
+
+
+/* =========================
+
+   CHAPTER BREAKDOWN (WHAT'S INSIDE)
+
+========================= */
+
+.pp-chapters{ padding:100px 24px; background:#fff; }
+
+.pp-chapters-head{ text-align:center; max-width:700px; margin:0 auto 60px; }
+
+.pp-chapters-head h2{ font-size:clamp(32px,4vw,46px); margin:10px 0; letter-spacing:-1.5px; }
+
+.pp-chapters-grid{ max-width:1000px; margin:auto; display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+
+.pp-chapter-card{
+
+  padding:30px; border-radius:var(--radius-lg); background:#FAF9F6; border:1px solid #EAE5D9;
+
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.pp-chapter-card:hover{ transform:translateY(-4px); box-shadow:0 12px 30px rgba(0,0,0,.06); border-color:var(--blue); }
+
+.pp-ch-num{ display:inline-block; padding:4px 10px; border-radius:50px; background:rgba(135,168,120,.2); color:var(--blue-dark); font-size:11px; font-weight:800; margin-bottom:12px; }
+
+.pp-chapter-card h3{ margin:0 0 10px; font-size:20px; }
+
+.pp-chapter-card p{ margin:0; font-size:14px; color:var(--muted); line-height:1.6; }
+
+
+
+/* =========================
+
+   PRODUCT / DELIVERABLES STACK
+
+========================= */
+
+.pp-deliverables{ padding:90px 24px; background:#F5F0E6; }
+
+.pp-deliv-box{ max-width:1000px; margin:auto; background:#fff; border-radius:var(--radius-xl); padding:50px; border:1px solid #E5E0D5; box-shadow:0 20px 40px rgba(0,0,0,.04); }
+
+.pp-deliv-grid{ display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:35px; }
+
+.pp-deliv-item{ display:flex; gap:16px; align-items:flex-start; }
+
+.pp-deliv-icon{ width:44px; height:44px; border-radius:var(--radius-md); background:rgba(255,107,91,.1); color:var(--coral); display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0; }
+
+.pp-deliv-text h4{ margin:0 0 4px; font-size:16px; color:var(--text); }
+
+.pp-deliv-text p{ margin:0; font-size:13px; color:var(--muted); line-height:1.5; }
+
+
+
+/* =========================
+
+   TESTIMONIALS / PROOF
+
+========================= */
+
+.pp-proof{ padding:100px 24px; background:#fff; }
+
+.pp-proof-head{ text-align:center; max-width:650px; margin:0 auto 60px; }
+
+.pp-proof-grid{ max-width:1100px; margin:auto; display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
+
+.pp-testi-card{ padding:28px; border-radius:var(--radius-lg); background:#FAF9F6; border:1px solid #ECE7DC; display:flex; flex-direction:column; justify-between; }
+
+.pp-stars{ color:#F59E0B; margin-bottom:12px; font-size:14px; }
+
+.pp-testi-card p{ margin:0 0 20px; font-size:14px; color:#4B5563; line-height:1.65; font-style:italic; }
+
+.pp-testi-user{ display:flex; align-items:center; gap:12px; }
+
+.pp-avatar{ width:40px; height:40px; border-radius:50%; background:var(--blue-light); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; }
+
+.pp-user-info strong{ display:block; font-size:13px; color:var(--text); }
+
+.pp-user-info span{ font-size:11px; color:var(--muted); }
+
+
+
+/* =========================
+
+   PRICING & VALUE STACK
+
+========================= */
+
+.pp-pricing{ padding:100px 24px; background:#2D3142; color:#fff; scroll-margin-top:40px; }
+
+.pp-pricing-box{ max-width:850px; margin:auto; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.1); border-radius:var(--radius-xl); padding:50px; position:relative; overflow:hidden; }
+
+.pp-pricing-head{ text-align:center; margin-bottom:40px; }
+
+.pp-badge-pop{ display:inline-block; padding:6px 14px; background:var(--coral); color:#fff; font-size:11px; font-weight:800; border-radius:50px; text-transform:uppercase; letter-spacing:1px; margin-bottom:15px; }
+
+.pp-pricing-head h2{ font-size:36px; margin:0 0 10px; color:#fff; }
+
+.pp-stack-list{ border-top:1px dashed rgba(255,255,255,.15); border-bottom:1px dashed rgba(255,255,255,.15); padding:25px 0; margin-bottom:30px; }
+
+.pp-stack-item{ display:flex; justify-content:space-between; padding:10px 0; font-size:15px; color:#D1D5DB; }
+
+.pp-stack-item span.val{ text-decoration:line-through; opacity:0.6; }
+
+.pp-price-tag{ text-align:center; margin-bottom:30px; }
+
+.pp-old-price{ font-size:22px; color:#9CA3AF; text-decoration:line-through; margin-right:10px; }
+
+.pp-main-price{ font-size:54px; font-weight:800; color:#fff; }
+
+.pp-evergreen-timer{ text-align:center; background:rgba(255,255,255,.06); padding:12px; border-radius:var(--radius-md); font-size:13px; color:#F3F4F6; margin-bottom:25px; }
+
+
+
+/* =========================
+
+   FAQ SECTION
+
+========================= */
+
+.pp-faq{ padding:100px 24px; background:#fff; }
+
+.pp-faq-head{ text-align:center; max-width:600px; margin:0 auto 50px; }
+
+.pp-faq-container{ max-width:800px; margin:auto; }
+
+.pp-faq-item{ border-bottom:1px solid #E5E7EB; padding:20px 0; }
+
+.pp-faq-item summary{ font-weight:700; font-size:17px; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; }
+
+.pp-faq-item summary::after{ content:"+"; font-size:20px; color:var(--blue-dark); }
+
+.pp-faq-item[open] summary::after{ content:"−"; }
+
+.pp-faq-item p{ margin:12px 0 0; font-size:14px; color:var(--muted); line-height:1.7; }
+
+
+
+/* =========================
+
+   FOOTER
+
+========================= */
+
+.pp-footer{ padding:40px 24px; background:#1F2937; color:#9CA3AF; font-size:12px; text-align:center; border-top:1px solid #374151; }
+
+
+
+/* =========================
+
+   RESPONSIVE DESIGN
+
+========================= */
+
+@media(max-width:900px){
+
+  .pp-hero-grid, .pp-problem-grid, .pp-shift-grid, .pp-chapters-grid, .pp-proof-grid, .pp-deliv-grid{ grid-template-columns:1fr; gap:40px; }
+
+  .pp-arrow{ transform:rotate(90deg); margin:10px 0; }
+
+  .pp-pricing-box, .pp-deliv-box{ padding:30px 20px; }
+
+}
+
+</style>
+
+
+
+<!-- TOP OFFER BAR -->
+
+<div class="pp-offer-bar">
+
+  <strong>Instant Digital Access:</strong> The AI Parent Playbook + 4 Exclusive Bonuses (60% OFF Today)
+
+</div>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="pp-hero">
+
+  <div class="pp-container">
+
+    <div class="pp-hero-grid">
+
+      <div>
+
+        <div class="pp-eyebrow">
+
+          <span></span> The Practical AI Guide For Parents
+
+        </div>
+
+        <h1>Less planning.<br>Less stress.<br><em>More family time.</em></h1>
+
+        <p class="pp-hero-sub">
+
+          Stop struggling with homework battles and daily planning exhaustion. Turn ChatGPT into your personal parenting assistant to customize learning, streamline routines, and reclaim 5+ hours every week.
+
+        </p>
+
+        <a href="#checkout" class="pp-primary-btn">
+
+          Get Instant Access Now — $27 <span style="font-size:12px; opacity:0.8; text-decoration:line-through; margin-left:6px;">$67</span>
+
+        </a>
+
+        <div class="pp-secondary-note">
+
+          ✓ PDF eBook + Printable Guides · Instant Download · Lifetime Access
+
+        </div>
+
+      </div>
+
+
+
+      <div class="pp-book-stage">
+
+        <div class="pp-book">
+
+          <div class="pp-book-brand">PARENTURA</div>
+
+          <h2>The AI<br>Parent<br>Playbook</h2>
+
+          <p>Practical AI strategies for smarter, calmer and more connected family life.</p>
+
+          <div class="pp-book-author">BY PARENTURA</div>
+
+        </div>
+
+        <div class="pp-floating-proof">
+
+          <strong>1,480+</strong>
+
+          <span>Busy Parents Enrolled</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- TRUST STRIP -->
+
+<section class="pp-trust">
+
+  <div class="pp-container pp-trust-inner">
+
+    <div class="pp-trust-item"><div class="pp-trust-icon">✓</div> 1,400+ Copies Downloaded</div>
+
+    <div class="pp-trust-item"><div class="pp-trust-icon">★</div> 4.9/5 Average Rating</div>
+
+    <div class="pp-trust-item"><div class="pp-trust-icon">⚡</div> Instant PDF Access</div>
+
+    <div class="pp-trust-item"><div class="pp-trust-icon">🛡</div> 30-Day Money-Back Guarantee</div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PROBLEM & AGITATION -->
+
+<section class="pp-problem pp-reveal">
+
+  <div class="pp-container">
+
+    <div class="pp-problem-grid">
+
+      <div>
+
+        <div class="pp-section-label">The Invisible Mental Load</div>
+
+        <h2>Parenting isn't just about doing.<br><br>It's about constantly <strong>thinking.</strong></h2>
+
+      </div>
+
+      <div class="pp-problem-copy">
+
+        <p>
+
+          What should my child practice this week? How do I explain fractions without an argument? What quick meals can I cook? When do we find time for fun?
+
+        </p>
+
+        <p>
+
+          By the time you finish your workday, handling the logistics of raising kids feels like running a second full-time job. You are burnout-prone, mentally drained, and missing out on present moments.
+
+        </p>
+
+        <div class="pp-problem-list">
+
+          <div class="pp-problem-item"><span>✕</span> Homework arguments</div>
+
+          <div class="pp-problem-item"><span>✕</span> Daily meal & schedule decision fatigue</div>
+
+          <div class="pp-problem-item"><span>✕</span> Screen-time guilt</div>
+
+          <div class="pp-problem-item"><span>✕</span> Lack of personalized learning support</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SHIFT SECTION -->
+
+<section class="pp-shift pp-reveal">
+
+  <div class="pp-container">
+
+    <div class="pp-shift-head">
+
+      <div class="pp-section-label">A Smarter Approach</div>
+
+      <h2>What if you had a 24/7 personal assistant for your family?</h2>
+
+      <p>AI doesn't replace your love or presence as a parent—it automates the tedious background planning so you can give your kids your best self.</p>
+
+    </div>
+
+    <div class="pp-shift-grid">
+
+      <div class="pp-way old">
+
+        <small>The Old Exhausting Way</small>
+
+        <h3>Solo Micro-Managing</h3>
+
+        <ul>
+
+          <li>Spending hours Googling study aids</li>
+
+          <li>Fighting through math homework confusion</li>
+
+          <li>Creating daily chore schedules from scratch</li>
+
+          <li>Feeling constantly overwhelmed by admin work</li>
+
+        </ul>
+
+      </div>
+
+      <div class="pp-arrow">→</div>
+
+      <div class="pp-way new">
+
+        <small>The AI-Assisted Parent Way</small>
+
+        <h3>Delegated & Present</h3>
+
+        <ul>
+
+          <li>Generate custom bedtime stories & learning games in 10s</li>
+
+          <li>Turn complex homework into fun step-by-step prompts</li>
+
+          <li>Build tailored routines that kids actually enjoy</li>
+
+          <li>Save 5+ hours a week for real family bonding</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- WHAT'S INSIDE (CHAPTER BREAKDOWN) -->
+
+<section class="pp-chapters pp-reveal">
+
+  <div class="pp-container">
+
+    <div class="pp-chapters-head">
+
+      <div class="pp-section-label">Inside The Playbook</div>
+
+      <h2>7 Practical Chapters Designed For Busy Parents</h2>
+
+      <p>No technical jargon. Just copy-paste prompts and clear step-by-step workflows.</p>
+
+    </div>
+
+    <div class="pp-chapters-grid">
+
+      <div class="pp-chapter-card">
+
+        <span class="pp-ch-num">CHAPTER 1</span>
+
+        <h3>AI Foundations for Families</h3>
+
+        <p>How to set up free AI tools safely, control privacy settings, and prompt effectively without tech headaches.</p>
+
+      </div>
+
+      <div class="pp-chapter-card">
+
+        <span class="pp-ch-num">CHAPTER 2</span>
+
+        <h3>The Homework Rescue Kit</h3>
+
+        <p>Turn ChatGPT into an empathetic tutor that explains concepts using your child's favorite hobbies (e.g., Lego or Pokemon).</p>
+
+      </div>
+
+      <div class="pp-chapter-card">
+
+        <span class="pp-ch-num">CHAPTER 3</span>
+
+        <h3>Personalized Learning & Curiosity</h3>
+
+        <p>Create tailored reading lists, science experiments, and creative writing prompts based on your child's age and interest.</p>
+
+      </div>
+
+      <div class="pp-chapter-card">
+
+        <span class="pp-ch-num">CHAPTER 4</span>
+
+        <h3>Family Logistics & Meal Automation</h3>
+
+        <p>Generate weekly meal plans, instant grocery lists based on pantry items, and frictionless morning/bedtime routines.</p>
+
+      </div>
+
+      <div class="pp-chapter-card">
+
+        <span class="pp-ch-num">CHAPTER 5</span>
+
+        <h3>Emotional Growth & Storytelling</h3>
+
+        <p>Use custom story generators to help younger children navigate emotions, big transitions, and bedtime anxieties.</p>
+
+      </div>
+
+      <div class="pp-chapter-card">
+
+        <span class="pp-ch-num">CHAPTER 6</span>
+
+        <h3>Healthy Screen Time & AI Safety</h3>
+
+        <p>Establish clear family AI rules, teach your kids critical AI literacy, and avoid screen-addiction traps.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- WHAT YOU GET / VALUE STACK -->
+
+<section class="pp-deliverables pp-reveal">
+
+  <div class="pp-container">
+
+    <div class="pp-deliv-box">
+
+      <div style="text-align:center;">
+
+        <div class="pp-section-label">Everything Included Today</div>
+
+        <h2 style="font-size:32px; margin:5px 0;">Here is exactly what you get:</h2>
+
+      </div>
+
+      <div class="pp-deliv-grid">
+
+        <div class="pp-deliv-item">
+
+          <div class="pp-deliv-icon">📘</div>
+
+          <div class="pp-deliv-text">
+
+            <h4>The AI Parent Playbook (PDF Guide)</h4>
+
+            <p>120+ pages of high-impact strategies, real-world examples, and step-by-step guidance.</p>
+
+          </div>
+
+        </div>
+
+        <div class="pp-deliv-item">
+
+          <div class="pp-deliv-icon">⚡</div>
+
+          <div class="pp-deliv-text">
+
+            <h4>50 Ready-to-Use Copy-Paste Prompts</h4>
+
+            <p>Tested prompts for homework, routine building, meal prep, and custom storytelling.</p>
+
+          </div>
+
+        </div>
+
+        <div class="pp-deliv-item">
+
+          <div class="pp-deliv-icon">📋</div>
+
+          <div class="pp-deliv-text">
+
+            <h4>BONUS 1: Printable Routine Templates</h4>
+
+            <p>Fillable weekly planners and morning checklists to keep kids organized visually.</p>
+
+          </div>
+
+        </div>
+
+        <div class="pp-deliv-item">
+
+          <div class="pp-deliv-icon">🛡</div>
+
+          <div class="pp-deliv-text">
+
+            <h4>BONUS 2: Kids AI Safety & Privacy Guide</h4>
+
+            <p>Essential checklist to ensure your children use AI tools safely and ethically.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SOCIAL PROOF / TESTIMONIALS -->
+
+<section class="pp-proof pp-reveal">
+
+  <div class="pp-container">
+
+    <div class="pp-proof-head">
+
+      <div class="pp-section-label">Real Parent Results</div>
+
+      <h2>Loved by over 1,400+ moms and dads</h2>
+
+    </div>
+
+    <div class="pp-proof-grid">
+
+      <div class="pp-testi-card">
+
+        <div class="pp-stars">★★★★★</div>
+
+        <p>"The Homework Prompt in Chapter 2 alone saved our evenings. My 9-year-old was struggling with word problems, and AI explained it like a story. Zero tears!"</p>
+
+        <div class="pp-testi-user">
+
+          <div class="pp-avatar">S</div>
+
+          <div class="pp-user-info">
+
+            <strong>Sarah M.</strong>
+
+            <span>Mother of 2, Verified Buyer</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="pp-testi-card">
+
+        <div class="pp-stars">★★★★★</div>
+
+        <p>"I was skeptical about using AI for family stuff, but this playbook makes it so practical. Generating weekly meal plans with current fridge items saves me $50/week!"</p>
+
+        <div class="pp-testi-user">
+
+          <div class="pp-avatar">D</div>
+
+          <div class="pp-user-info">
+
+            <strong>David K.</strong>
+
+            <span>Father of 3, Verified Buyer</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="pp-testi-card">
+
+        <div class="pp-stars">★★★★★</div>
+
+        <p>"Finally an AI guide that isn't written for programmers! Super easy to read, and the prompt swipe file is brilliant."</p>
+
+        <div class="pp-testi-user">
+
+          <div class="pp-avatar">E</div>
+
+          <div class="pp-user-info">
+
+            <strong>Elena R.</strong>
+
+            <span>Elementary Educator & Parent</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PRICING & OFFER SECTION -->
+
+<section class="pp-pricing pp-reveal" id="checkout">
+
+  <div class="pp-container">
+
+    <div class="pp-pricing-box">
+
+      <div class="pp-pricing-head">
+
+        <span class="pp-badge-pop">Limited-Time Special Offer</span>
+
+        <h2>Get The Complete AI Parent Bundle</h2>
+
+        <p style="color:#9CA3AF; margin:0;">Reclaim your time and eliminate daily planning overwhelm today.</p>
+
+      </div>
+
+
+
+      <div class="pp-stack-list">
+
+        <div class="pp-stack-item">
+
+          <span>The AI Parent Playbook (Main PDF eBook)</span>
+
+          <span class="val">$47 Value</span>
+
+        </div>
+
+        <div class="pp-stack-item">
+
+          <span>50 Ready-to-Use AI Prompts Swipe File</span>
+
+          <span class="val">$27 Value</span>
+
+        </div>
+
+        <div class="pp-stack-item">
+
+          <span>Bonus 1: Family Routine Printable Templates</span>
+
+          <span class="val">$15 Value</span>
+
+        </div>
+
+        <div class="pp-stack-item">
+
+          <span>Bonus 2: Child AI Safety & Ethics Checklist</span>
+
+          <span class="val">$19 Value</span>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="pp-evergreen-timer">
+
+        ⏳ Special Price Lock Expires In: <strong id="pp-evergreen-clock">14:59</strong>
+
+      </div>
+
+
+
+      <div class="pp-price-tag">
+
+        <span class="pp-old-price">$108</span>
+
+        <span class="pp-main-price">$27</span>
+
+      </div>
+
+
+
+      <!-- Real Checkout Link Target -->
+
+      <a href="https://your-checkout-link.com/pay" class="pp-primary-btn" style="width:100%; font-size:18px;"> 
+        Get Instant Access Now → 
+      </a> 
+ 
+      <p style="text-align:center; font-size:12px; color:#9CA3AF; margin-top:15px;"> 
+        🔒 256-Bit Secure Checkout · 30-Day Money Back Guarantee 
+      </p> 
+    </div> 
+  </div> 
+</section> 
+ 
+<!-- FAQ SECTION --> 
+<section class="pp-faq pp-reveal"> 
+  <div class="pp-container"> 
+    <div class="pp-faq-head"> 
+      <div class="pp-section-label">Got Questions?</div> 
+      <h2>Frequently Asked Questions</h2> 
+    </div> 
+    <div class="pp-faq-container"> 
+      <details class="pp-faq-item"> 
+        <summary>Do I need paid subscriptions to ChatGPT or Claude to use this?</summary> 
+        <p>No! All prompts and workflows inside the playbook are fully optimized to work with free versions of ChatGPT, Claude, or Google Gemini.</p> 
+      </details> 
+      <details class="pp-faq-item"> 
+        <summary>I am not tech-savvy. Is this easy to follow?</summary> 
+        <p>100%. We designed this specifically for busy parents who aren't technical. Every strategy comes with simple copy-and-paste prompts and clear explanations.</p> 
+      </details> 
+      <details class="pp-faq-item"> 
+        <summary>How do I receive my purchase?</summary> 
+        <p>Immediately after checkout, you will receive an email with direct download links for the eBook, prompt files, and all printable bonus templates.</p> 
+      </details> 
+      <details class="pp-faq-item"> 
+        <summary>What if it doesn't work for my family?</summary> 
+        <p>We offer a hassle-free 30-day money-back guarantee. If you don't find value in the playbook, simply email us for a full refund.</p> 
+      </details> 
+    </div> 
+  </div> 
+</section> 
+ 
+<!-- FOOTER --> 
+<footer class="pp-footer"> 
+  <div class="pp-container"> 
+    <p>© 2026 Parentura. All Rights Reserved. Designed for better parenting with AI.</p> 
+    <p style="opacity:0.6;">Disclaimer: This guide provides educational strategies. AI tools should always be used with parental supervision.</p> 
+  </div> 
+</footer> 
+ 
+<script> 
+/* ========================= 
+   SCROLL REVEAL OBSERVER 
+========================= */ 
+document.addEventListener('DOMContentLoaded', function(){ 
+  const observer = new IntersectionObserver((entries) => { 
+    entries.forEach(entry => { 
+      if(entry.isIntersecting){ 
+        entry.target.classList.add('active'); 
+      } 
+    }); 
+  }, { threshold: 0.1 }); 
+ 
+  document.querySelectorAll('.pp-reveal').forEach(el => observer.observe(el)); 
+ 
+  /* ========================= 
+     EVERGREEN TIMER (15 Min Loop) 
+  ========================= */ 
+  let timeRemaining = 15 * 60; // 15 minutes in seconds 
+  const clockElement = document.getElementById('pp-evergreen-clock'); 
+ 
+  function updateClock(){ 
+    let minutes = Math.floor(timeRemaining / 60); 
+    let seconds = timeRemaining % 60; 
+    clockElement.textContent =  
+      `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`; 
+     
+    if(timeRemaining > 0){ 
+      timeRemaining--; 
+    } else { 
+      timeRemaining = 15 * 60; // Reset for evergreen urgency 
+    } 
+  } 
+  setInterval(updateClock, 1000); 
+  updateClock(); 
+}); 
+</script> 
+ 
+</div> dekho
