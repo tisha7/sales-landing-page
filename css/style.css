@@ -102,22 +102,6 @@
    ANNOUNCEMENT BAR
 ========================================================= */
 
-.pp-offer-bar {
-  min-height: 44px;
-  padding: 11px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: var(--forest);
-  color: rgba(255, 255, 255, 0.9);
-
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
 .pp-offer-bar strong {
   color: #ffd9d3;
   font-weight: 800;
@@ -137,6 +121,143 @@
    PARENTURA — HERO
    Clean standalone component
    ========================================================= */
+
+
+/* =========================================================
+   PARENTURA — TYPOGRAPHY SYSTEM
+   Clean readable hierarchy — no stacked overrides
+   ========================================================= */
+
+.pp-hero-sub {
+  max-width: 575px;
+  margin: 0 0 30px;
+  color: #667067;
+  font: 400 18px/1.7 "DM Sans", sans-serif;
+}
+
+.pp-secondary-note {
+  margin: 13px 0 0;
+  color: #788178;
+  font: 400 13px/1.55 "DM Sans", sans-serif;
+}
+
+.pp-section-label {
+  color: #6f8f65;
+  font: 700 13px/1.4 "DM Sans", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pp-trust-item {
+  color: #667067;
+  font: 500 15px/1.5 "DM Sans", sans-serif;
+}
+
+.pp-problem-item {
+  color: #667067;
+  font: 400 16px/1.65 "DM Sans", sans-serif;
+}
+
+.pp-stack-item {
+  color: #667067;
+  font: 400 16px/1.65 "DM Sans", sans-serif;
+}
+
+.pp-deliv-text {
+  color: #667067;
+  font: 400 16px/1.65 "DM Sans", sans-serif;
+}
+
+.pp-user-info {
+  color: #667067;
+  font: 400 14px/1.5 "DM Sans", sans-serif;
+}
+
+.pp-testi-card {
+  color: #667067;
+  font: 400 16px/1.7 "DM Sans", sans-serif;
+}
+
+.pp-faq-item {
+  color: #667067;
+  font: 400 16px/1.7 "DM Sans", sans-serif;
+}
+
+.pp-faq-cta {
+  color: #667067;
+  font: 400 16px/1.65 "DM Sans", sans-serif;
+}
+
+.pp-offer-bar {
+  color: #667067;
+  font: 500 15px/1.5 "DM Sans", sans-serif;
+}
+
+.pp-evergreen-timer {
+  color: #26382c;
+  font: 700 15px/1.4 "DM Sans", sans-serif;
+}
+
+.pp-footer {
+  color: #667067;
+  font-family: "DM Sans", sans-serif;
+}
+
+.pp-footer p,
+.pp-footer li,
+.pp-footer a {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.pp-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .pp-hero-sub {
+    font-size: 17px;
+  }
+
+  .pp-problem-item,
+  .pp-stack-item,
+  .pp-deliv-text,
+  .pp-testi-card,
+  .pp-faq-item,
+  .pp-faq-cta {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 680px) {
+  .pp-hero-sub {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .pp-secondary-note {
+    font-size: 13px;
+  }
+
+  .pp-trust-item,
+  .pp-problem-item,
+  .pp-stack-item,
+  .pp-deliv-text,
+  .pp-testi-card,
+  .pp-faq-item,
+  .pp-faq-cta {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .pp-footer p,
+  .pp-footer li,
+  .pp-footer a {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
 
 .pp-hero {
   position: relative;
@@ -194,13 +315,6 @@
   font-style: normal;
 }
 
-.pp-hero-sub {
-  max-width: 575px;
-  margin: 0 0 30px;
-  color: #667067;
-  font: 400 18px/1.7 "DM Sans", sans-serif;
-}
-
 .pp-primary-btn {
   width: fit-content;
   min-height: 62px;
@@ -236,12 +350,6 @@
   color: rgba(255, 255, 255, 0.66);
   font: 500 12px/1 "DM Sans", sans-serif;
   text-decoration: line-through;
-}
-
-.pp-secondary-note {
-  margin: 13px 0 0;
-  color: #788178;
-  font: 400 12px/1.5 "DM Sans", sans-serif;
 }
 
 .pp-book-stage {
@@ -435,16 +543,6 @@
   flex-wrap: wrap;
 }
 
-.pp-trust-item {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-
-  color: #59665e;
-  font-size: 12px;
-  font-weight: 700;
-}
-
 .pp-trust-icon {
   width: 27px;
   height: 27px;
@@ -465,17 +563,6 @@
 /* =========================================================
    SHARED SECTION LABEL
 ========================================================= */
-
-.pp-section-label {
-  margin-bottom: 13px;
-
-  color: var(--coral);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.17em;
-  line-height: 1.3;
-  text-transform: uppercase;
-}
 
 /* =========================================================
    PROBLEM
@@ -525,30 +612,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 11px;
   margin-top: 29px;
-}
-
-.pp-problem-item {
-  min-height: 58px;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  padding: 14px 16px;
-
-  border: 1px solid var(--line-soft);
-  border-radius: 12px;
-
-  background: #fbfaf7;
-
-  color: var(--text);
-  font-size: 12px;
-  font-weight: 700;
-
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease;
 }
 
 .pp-problem-item:hover {
@@ -927,25 +990,6 @@
   gap: 15px;
 }
 
-.pp-testi-card {
-  min-height: 285px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  padding: 30px;
-
-  border: 1px solid var(--line);
-  border-radius: 18px;
-
-  background: #fcfbf8;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
 .pp-testi-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-sm);
@@ -1136,19 +1180,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.11);
 }
 
-.pp-stack-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-
-  padding: 15px 2px;
-
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 13px;
-  line-height: 1.45;
-}
-
 .pp-stack-item + .pp-stack-item {
   border-top: 1px solid rgba(255, 255, 255, 0.055);
 }
@@ -1160,21 +1191,6 @@
   font-size: 12px;
   font-weight: 800;
   white-space: nowrap;
-}
-
-.pp-evergreen-timer {
-  margin-bottom: 27px;
-  padding: 12px 15px;
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 11px;
-
-  background: rgba(255, 255, 255, 0.055);
-
-  color: rgba(255, 255, 255, 0.65);
-
-  text-align: center;
-  font-size: 11px;
 }
 
 .pp-evergreen-timer strong {
@@ -1242,11 +1258,6 @@
 .pp-faq-container {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.pp-faq-item {
-  padding: 0;
-  border-bottom: 1px solid var(--line);
 }
 
 .pp-faq-item:first-child {
@@ -1319,22 +1330,6 @@
 
 /* FAQ CTA */
 
-.pp-faq-cta {
-  max-width: 800px;
-  margin: 45px auto 0;
-  padding: 25px 27px;
-
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 5px 25px;
-
-  border: 1px solid rgba(135, 168, 120, 0.2);
-  border-radius: 16px;
-
-  background: var(--sage-soft);
-}
-
 .pp-faq-cta strong {
   display: block;
 
@@ -1383,19 +1378,6 @@
    FOOTER
 ========================================================= */
 
-.pp-footer {
-  position: relative;
-
-  padding: 43px 20px 30px;
-
-  border-top: 1px solid rgba(135, 168, 120, 0.17);
-
-  background: var(--forest);
-  color: rgba(255, 255, 255, 0.72);
-
-  text-align: center;
-}
-
 .pp-footer::before {
   content: "";
 
@@ -1415,13 +1397,6 @@
     var(--coral),
     var(--sage)
   );
-}
-
-.pp-footer p {
-  margin: 0 auto 8px;
-
-  font-size: 10px;
-  line-height: 1.6;
 }
 
 .pp-footer p:last-child {
