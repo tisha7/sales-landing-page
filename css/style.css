@@ -128,70 +128,49 @@
    HERO
 ========================================================= */
 
+/* =========================================================
+   HERO — PREMIUM EDITORIAL
+========================================================= */
+
+
+/* =========================================================
+   PARENTURA — HERO
+   Clean standalone component
+   ========================================================= */
+
 .pp-hero {
   position: relative;
   overflow: hidden;
-  padding: 92px 0 96px;
-
+  padding: 76px 24px 96px;
   background:
-    radial-gradient(
-      circle at 84% 20%,
-      rgba(135, 168, 120, 0.16),
-      transparent 31%
-    ),
-    radial-gradient(
-      circle at 8% 90%,
-      rgba(255, 107, 91, 0.07),
-      transparent 28%
-    ),
-    linear-gradient(
-      180deg,
-      var(--warm-white) 0%,
-      var(--cream) 100%
-    );
-}
-
-.pp-hero::before {
-  content: "";
-  position: absolute;
-  width: 520px;
-  height: 520px;
-  right: -220px;
-  top: -260px;
-  border-radius: 50%;
-  border: 1px solid rgba(135, 168, 120, 0.13);
-  pointer-events: none;
+    radial-gradient(circle at 78% 28%, rgba(135, 168, 120, 0.14), transparent 30%),
+    radial-gradient(circle at 92% 78%, rgba(255, 107, 91, 0.08), transparent 25%),
+    #faf8f3;
 }
 
 .pp-hero-grid {
+  width: min(1180px, 100%);
+  min-height: 650px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.03fr) minmax(380px, 0.97fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
   align-items: center;
-  gap: 72px;
+  gap: 34px;
 }
 
 .pp-eyebrow {
-  width: fit-content;
   display: inline-flex;
   align-items: center;
   gap: 9px;
-
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   padding: 8px 13px;
-
-  border: 1px solid rgba(107, 143, 92, 0.18);
+  border: 1px solid rgba(38, 56, 44, 0.12);
   border-radius: 999px;
-
-  background: rgba(255, 255, 255, 0.76);
-  color: var(--sage-dark);
-
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-  line-height: 1;
+  background: rgba(255, 255, 255, 0.72);
+  color: #26382c;
+  font: 700 12px/1.2 "DM Sans", sans-serif;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-
-  backdrop-filter: blur(10px);
 }
 
 .pp-eyebrow span {
@@ -199,241 +178,245 @@
   height: 7px;
   flex: 0 0 7px;
   border-radius: 50%;
-  background: var(--coral);
-  box-shadow: 0 0 0 4px rgba(255, 107, 91, 0.1);
+  background: #ff6b5b;
 }
 
 .pp-hero h1 {
-  max-width: 690px;
-  margin: 0;
-
-  font-size: clamp(46px, 5.3vw, 72px);
-  line-height: 0.99;
+  max-width: 720px;
+  margin: 0 0 25px;
+  color: #26382c;
+  font: 800 clamp(50px, 6vw, 76px)/0.99 "Manrope", sans-serif;
   letter-spacing: -0.055em;
-  font-weight: 800;
 }
 
 .pp-hero h1 em {
-  position: relative;
-  color: var(--sage-dark);
+  color: #6f8f65;
   font-style: normal;
 }
 
-.pp-hero h1 em::after {
-  content: "";
-  position: absolute;
-  left: 2px;
-  right: 7%;
-  bottom: -8px;
-  height: 7px;
-  border-radius: 99px;
-  background: rgba(135, 168, 120, 0.18);
-  transform: rotate(-1deg);
-  z-index: -1;
-}
-
 .pp-hero-sub {
-  max-width: 625px;
-  margin: 28px 0 30px;
-
-  color: var(--text-soft);
-  font-size: 17px;
-  line-height: 1.75;
+  max-width: 575px;
+  margin: 0 0 30px;
+  color: #667067;
+  font: 400 18px/1.7 "DM Sans", sans-serif;
 }
 
 .pp-primary-btn {
-  position: relative;
-  isolation: isolate;
-
-  min-height: 60px;
+  width: fit-content;
+  min-height: 62px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  padding: 0 25px;
-  overflow: hidden;
-
+  gap: 13px;
+  padding: 0 21px;
   border: 0;
-  border-radius: 13px;
-
-  background: linear-gradient(
-    135deg,
-    var(--coral) 0%,
-    var(--coral-dark) 100%
-  );
-
-  color: #fff !important;
-
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-
-  box-shadow:
-    0 12px 25px rgba(255, 107, 91, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.pp-primary-btn::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-
-  background: linear-gradient(
-    110deg,
-    transparent 25%,
-    rgba(255, 255, 255, 0.18) 50%,
-    transparent 75%
-  );
-
-  transform: translateX(-120%);
-  transition: transform 0.55s ease;
+  border-radius: 15px;
+  background: #ff6b5b;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 16px 34px rgba(255, 107, 91, 0.20);
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .pp-primary-btn:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 17px 34px rgba(255, 107, 91, 0.29),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.pp-primary-btn:hover::before {
-  transform: translateX(120%);
-}
-
-.pp-primary-btn:active {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(255, 107, 91, 0.26);
 }
 
 .pp-btn-main {
-  font-weight: 800;
+  font: 700 16px/1 "DM Sans", sans-serif;
 }
 
 .pp-btn-price {
-  padding-left: 3px;
-  font-size: 16px;
+  padding-left: 13px;
+  border-left: 1px solid rgba(255, 255, 255, 0.38);
+  font: 800 18px/1 "Manrope", sans-serif;
 }
 
 .pp-btn-old-price {
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 12px;
+  color: rgba(255, 255, 255, 0.66);
+  font: 500 12px/1 "DM Sans", sans-serif;
   text-decoration: line-through;
 }
 
 .pp-secondary-note {
-  margin-top: 13px;
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 500;
+  margin: 13px 0 0;
+  color: #788178;
+  font: 400 12px/1.5 "DM Sans", sans-serif;
 }
-
-/* =========================================================
-   HERO PRODUCT MOCKUP
-========================================================= */
 
 .pp-book-stage {
   position: relative;
-  min-height: 520px;
-
+  min-height: 620px;
   display: flex;
   align-items: center;
   justify-content: center;
+  isolation: isolate;
+}
+
+.pp-book-stage::before {
+  content: "";
+  position: absolute;
+  width: 78%;
+  height: 78%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(135, 168, 120, 0.17),
+    rgba(135, 168, 120, 0) 68%
+  );
+  z-index: -1;
 }
 
 .pp-real-book {
   position: relative;
-  width: min(420px, 88%);
-  z-index: 2;
-
-  transform:
-    perspective(1400px)
-    rotateY(-8deg)
-    rotateX(2deg)
-    rotateZ(-1deg);
-
-  filter: drop-shadow(
-    0 30px 30px rgba(38, 56, 44, 0.18)
-  );
-
-  transition:
-    transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
-    filter 0.45s ease;
+  width: min(500px, 92%);
+  transform: perspective(1200px) rotateY(-8deg) rotateZ(-1deg);
+  filter: drop-shadow(0 28px 30px rgba(38, 56, 44, 0.18));
+  transition: transform 260ms ease;
 }
 
-.pp-real-book::before {
-  content: "";
-  position: absolute;
-  left: 4%;
-  right: -2%;
-  bottom: -16px;
-  height: 28px;
-  border-radius: 50%;
-  background: rgba(38, 56, 44, 0.16);
-  filter: blur(15px);
-  z-index: -1;
+.pp-real-book:hover {
+  transform: perspective(1200px) rotateY(-3deg) rotateZ(0deg) translateY(-5px);
 }
 
 .pp-real-book img {
   width: 100%;
   height: auto;
-  border-radius: 4px 12px 12px 4px;
-}
-
-.pp-book-stage:hover .pp-real-book {
-  transform:
-    perspective(1400px)
-    rotateY(-3deg)
-    rotateX(1deg)
-    rotateZ(0)
-    translateY(-6px);
-  filter: drop-shadow(
-    0 38px 38px rgba(38, 56, 44, 0.21)
-  );
+  display: block;
+  border-radius: 4px;
 }
 
 .pp-floating-proof {
   position: absolute;
-  right: 0;
-  bottom: 42px;
-  z-index: 4;
-
-  min-width: 174px;
+  right: 1%;
+  bottom: 9%;
+  min-width: 188px;
   padding: 15px 18px;
-
-  border: 1px solid rgba(135, 168, 120, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 16px;
-
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: var(--shadow-md);
-
-  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 18px 40px rgba(38, 56, 44, 0.12);
+  backdrop-filter: blur(12px);
 }
 
 .pp-floating-proof strong {
   display: block;
-  margin-bottom: 2px;
-
-  color: var(--forest);
-  font-family: "Manrope", sans-serif;
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  margin-bottom: 3px;
+  color: #26382c;
+  font: 800 24px/1.1 "Manrope", sans-serif;
 }
 
 .pp-floating-proof span {
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 600;
+  display: block;
+  color: #667067;
+  font: 500 12px/1.4 "DM Sans", sans-serif;
 }
 
-/* =========================================================
-   TRUST STRIP
-========================================================= */
+/* Hero responsive */
+@media (max-width: 900px) {
+  .pp-hero {
+    padding: 62px 20px 76px;
+  }
+
+  .pp-hero-grid {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pp-hero h1 {
+    max-width: 680px;
+    font-size: clamp(46px, 8vw, 64px);
+  }
+
+  .pp-hero-sub {
+    max-width: 650px;
+    font-size: 17px;
+  }
+
+  .pp-book-stage {
+    min-height: 500px;
+  }
+
+  .pp-real-book {
+    width: min(470px, 82%);
+  }
+
+  .pp-floating-proof {
+    right: 5%;
+    bottom: 7%;
+  }
+}
+
+@media (max-width: 680px) {
+  .pp-hero {
+    padding: 48px 16px 58px;
+  }
+
+  .pp-hero-grid {
+    gap: 8px;
+  }
+
+  .pp-eyebrow {
+    margin-bottom: 17px;
+    padding: 7px 11px;
+    font-size: 11px;
+  }
+
+  .pp-hero h1 {
+    margin-bottom: 20px;
+    font-size: clamp(42px, 12vw, 54px);
+    letter-spacing: -0.05em;
+  }
+
+  .pp-hero-sub {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .pp-primary-btn {
+    width: 100%;
+    min-height: 60px;
+    justify-content: center;
+  }
+
+  .pp-secondary-note {
+    font-size: 12px;
+  }
+
+  .pp-book-stage {
+    min-height: 420px;
+    margin-top: 8px;
+  }
+
+  .pp-real-book {
+    width: min(410px, 94%);
+    transform: perspective(900px) rotateY(-5deg) rotateZ(-1deg);
+  }
+
+  .pp-floating-proof {
+    right: 1%;
+    bottom: 4%;
+    min-width: 165px;
+    padding: 13px 15px;
+  }
+
+  .pp-floating-proof strong {
+    font-size: 21px;
+  }
+
+  .pp-floating-proof span {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-primary-btn,
+  .pp-real-book {
+    transition: none;
+  }
+}
 
 .pp-trust {
   padding: 22px 0;
