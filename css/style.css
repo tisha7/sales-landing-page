@@ -102,6 +102,22 @@
    ANNOUNCEMENT BAR
 ========================================================= */
 
+.pp-offer-bar {
+  min-height: 44px;
+  padding: 11px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--forest);
+  color: rgba(255, 255, 255, 0.9);
+
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
 .pp-offer-bar strong {
   color: #ffd9d3;
   font-weight: 800;
@@ -121,143 +137,6 @@
    PARENTURA — HERO
    Clean standalone component
    ========================================================= */
-
-
-/* =========================================================
-   PARENTURA — TYPOGRAPHY SYSTEM
-   Clean readable hierarchy — no stacked overrides
-   ========================================================= */
-
-.pp-hero-sub {
-  max-width: 575px;
-  margin: 0 0 30px;
-  color: #667067;
-  font: 400 18px/1.7 "DM Sans", sans-serif;
-}
-
-.pp-secondary-note {
-  margin: 13px 0 0;
-  color: #788178;
-  font: 400 13px/1.55 "DM Sans", sans-serif;
-}
-
-.pp-section-label {
-  color: #6f8f65;
-  font: 700 13px/1.4 "DM Sans", sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.pp-trust-item {
-  color: #667067;
-  font: 500 15px/1.5 "DM Sans", sans-serif;
-}
-
-.pp-problem-item {
-  color: #667067;
-  font: 400 16px/1.65 "DM Sans", sans-serif;
-}
-
-.pp-stack-item {
-  color: #667067;
-  font: 400 16px/1.65 "DM Sans", sans-serif;
-}
-
-.pp-deliv-text {
-  color: #667067;
-  font: 400 16px/1.65 "DM Sans", sans-serif;
-}
-
-.pp-user-info {
-  color: #667067;
-  font: 400 14px/1.5 "DM Sans", sans-serif;
-}
-
-.pp-testi-card {
-  color: #667067;
-  font: 400 16px/1.7 "DM Sans", sans-serif;
-}
-
-.pp-faq-item {
-  color: #667067;
-  font: 400 16px/1.7 "DM Sans", sans-serif;
-}
-
-.pp-faq-cta {
-  color: #667067;
-  font: 400 16px/1.65 "DM Sans", sans-serif;
-}
-
-.pp-offer-bar {
-  color: #667067;
-  font: 500 15px/1.5 "DM Sans", sans-serif;
-}
-
-.pp-evergreen-timer {
-  color: #26382c;
-  font: 700 15px/1.4 "DM Sans", sans-serif;
-}
-
-.pp-footer {
-  color: #667067;
-  font-family: "DM Sans", sans-serif;
-}
-
-.pp-footer p,
-.pp-footer li,
-.pp-footer a {
-  font-size: 14px;
-  line-height: 1.65;
-}
-
-.pp-footer a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (max-width: 900px) {
-  .pp-hero-sub {
-    font-size: 17px;
-  }
-
-  .pp-problem-item,
-  .pp-stack-item,
-  .pp-deliv-text,
-  .pp-testi-card,
-  .pp-faq-item,
-  .pp-faq-cta {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 680px) {
-  .pp-hero-sub {
-    font-size: 16px;
-    line-height: 1.65;
-  }
-
-  .pp-secondary-note {
-    font-size: 13px;
-  }
-
-  .pp-trust-item,
-  .pp-problem-item,
-  .pp-stack-item,
-  .pp-deliv-text,
-  .pp-testi-card,
-  .pp-faq-item,
-  .pp-faq-cta {
-    font-size: 15px;
-    line-height: 1.65;
-  }
-
-  .pp-footer p,
-  .pp-footer li,
-  .pp-footer a {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-}
 
 .pp-hero {
   position: relative;
@@ -315,6 +194,13 @@
   font-style: normal;
 }
 
+.pp-hero-sub {
+  max-width: 575px;
+  margin: 0 0 30px;
+  color: #667067;
+  font: 400 18px/1.7 "DM Sans", sans-serif;
+}
+
 .pp-primary-btn {
   width: fit-content;
   min-height: 62px;
@@ -350,6 +236,12 @@
   color: rgba(255, 255, 255, 0.66);
   font: 500 12px/1 "DM Sans", sans-serif;
   text-decoration: line-through;
+}
+
+.pp-secondary-note {
+  margin: 13px 0 0;
+  color: #788178;
+  font: 400 12px/1.5 "DM Sans", sans-serif;
 }
 
 .pp-book-stage {
@@ -468,7 +360,7 @@
   .pp-eyebrow {
     margin-bottom: 17px;
     padding: 7px 11px;
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .pp-hero h1 {
@@ -543,6 +435,16 @@
   flex-wrap: wrap;
 }
 
+.pp-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #59665e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .pp-trust-icon {
   width: 27px;
   height: 27px;
@@ -563,6 +465,17 @@
 /* =========================================================
    SHARED SECTION LABEL
 ========================================================= */
+
+.pp-section-label {
+  margin-bottom: 13px;
+
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
 
 /* =========================================================
    PROBLEM
@@ -612,6 +525,30 @@
   grid-template-columns: 1fr 1fr;
   gap: 11px;
   margin-top: 29px;
+}
+
+.pp-problem-item {
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 16px;
+
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+
+  background: #fbfaf7;
+
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
 }
 
 .pp-problem-item:hover {
@@ -714,7 +651,7 @@
   margin-bottom: 10px;
 
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -742,7 +679,7 @@
   padding: 7px 0 7px 21px;
 
   color: var(--text-soft);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -860,7 +797,7 @@
   margin: 0;
 
   color: var(--muted);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.7;
 }
 
@@ -946,7 +883,7 @@
 
   color: var(--text);
   font-family: "Manrope", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -954,7 +891,7 @@
   margin: 0;
 
   color: var(--muted);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.65;
 }
 
@@ -990,6 +927,25 @@
   gap: 15px;
 }
 
+.pp-testi-card {
+  min-height: 285px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 30px;
+
+  border: 1px solid var(--line);
+  border-radius: 18px;
+
+  background: #fcfbf8;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
 .pp-testi-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-sm);
@@ -1007,7 +963,7 @@
   margin: 0 0 25px;
 
   color: #4d5a52;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.75;
   font-style: italic;
 }
@@ -1042,12 +998,12 @@
 
   color: var(--text);
   font-family: "Manrope", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .pp-user-info span {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 13px;
 }
 
 /* =========================================================
@@ -1168,7 +1124,7 @@
 
 .pp-pricing-head p {
   color: rgba(255, 255, 255, 0.58) !important;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -1178,6 +1134,19 @@
 
   border-top: 1px solid rgba(255, 255, 255, 0.11);
   border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.pp-stack-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 15px 2px;
+
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 15px;
+  line-height: 1.45;
 }
 
 .pp-stack-item + .pp-stack-item {
@@ -1191,6 +1160,21 @@
   font-size: 12px;
   font-weight: 800;
   white-space: nowrap;
+}
+
+.pp-evergreen-timer {
+  margin-bottom: 27px;
+  padding: 12px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.055);
+
+  color: rgba(255, 255, 255, 0.65);
+
+  text-align: center;
+  font-size: 13px;
 }
 
 .pp-evergreen-timer strong {
@@ -1260,6 +1244,11 @@
   margin: 0 auto;
 }
 
+.pp-faq-item {
+  padding: 0;
+  border-bottom: 1px solid var(--line);
+}
+
 .pp-faq-item:first-child {
   border-top: 1px solid var(--line);
 }
@@ -1278,7 +1267,7 @@
   cursor: pointer;
 
   font-family: "Manrope", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.45;
 
@@ -1324,25 +1313,41 @@
   margin: -2px 0 21px;
 
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.75;
 }
 
 /* FAQ CTA */
+
+.pp-faq-cta {
+  max-width: 800px;
+  margin: 45px auto 0;
+  padding: 25px 27px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 5px 25px;
+
+  border: 1px solid rgba(135, 168, 120, 0.2);
+  border-radius: 16px;
+
+  background: var(--sage-soft);
+}
 
 .pp-faq-cta strong {
   display: block;
 
   color: var(--forest);
   font-family: "Manrope", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .pp-faq-cta span {
   display: block;
 
   color: var(--text-soft);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -1361,7 +1366,7 @@
   background: var(--forest);
   color: #fff !important;
 
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 800;
 
   transition:
@@ -1377,6 +1382,19 @@
 /* =========================================================
    FOOTER
 ========================================================= */
+
+.pp-footer {
+  position: relative;
+
+  padding: 43px 20px 30px;
+
+  border-top: 1px solid rgba(135, 168, 120, 0.17);
+
+  background: var(--forest);
+  color: rgba(255, 255, 255, 0.72);
+
+  text-align: center;
+}
 
 .pp-footer::before {
   content: "";
@@ -1397,6 +1415,13 @@
     var(--coral),
     var(--sage)
   );
+}
+
+.pp-footer p {
+  margin: 0 auto 8px;
+
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .pp-footer p:last-child {
@@ -1485,7 +1510,7 @@
     min-height: 42px;
     padding: 10px 14px;
 
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.45;
   }
 
@@ -1499,7 +1524,7 @@
 
   .pp-eyebrow {
     max-width: 100%;
-    font-size: 9px;
+    font-size: 12px;
     letter-spacing: 0.08em;
   }
 
@@ -1528,7 +1553,7 @@
   }
 
   .pp-secondary-note {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.6;
   }
 
@@ -1552,7 +1577,7 @@
   }
 
   .pp-floating-proof span {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .pp-trust {
@@ -1564,14 +1589,14 @@
   }
 
   .pp-trust-item {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .pp-trust-icon {
     width: 23px;
     height: 23px;
     flex-basis: 23px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .pp-problem,
@@ -1709,11 +1734,11 @@
     align-items: flex-start;
     padding: 13px 0;
 
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .pp-stack-item .val {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .pp-price-tag {
@@ -1739,11 +1764,11 @@
 
   .pp-faq-item summary {
     padding: 19px 0;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .pp-faq-item p {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .pp-faq-cta {
@@ -1783,7 +1808,7 @@
   }
 
   .pp-stack-item .val {
-    font-size: 9px;
+    font-size: 12px;
   }
 }
 
