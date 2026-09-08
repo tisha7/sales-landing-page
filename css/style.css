@@ -2115,20 +2115,20 @@
 
 .parentura-pro .pp-footer {
   position: relative;
-  padding: 42px 24px 38px;
-  background: #2D3142 !important;
-  color: #E5E7EB !important;
+  padding: 46px 24px 32px;
+  background: linear-gradient(180deg, #F5F0E6 0%, #FAF9F6 100%) !important;
+  color: #6B7280 !important;
   font-size: 12px;
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(135,168,120,.18);
 }
 
 .parentura-pro .pp-footer::before {
   background: linear-gradient(
     90deg,
-    transparent,
-    rgba(255,107,91,0.35),
-    transparent
+    #87A878,
+    #FF6B5B,
+    #87A878
   ) !important;
 }
 
@@ -2138,17 +2138,17 @@
 
 .parentura-pro .pp-footer p {
   margin: 7px 0;
-  color: #E5E7EB !important;
+  color: #6B7280 !important;
   line-height: 1.7;
 }
 
 .parentura-pro .pp-footer p:first-child {
-  color: #FFFFFF !important;
-  font-weight: 600;
+  color: #2D3142 !important;
+  font-weight: 700;
 }
 
 .parentura-pro .pp-footer p:last-child {
-  color: #AEB4C0 !important;
+  color: #6B7280 !important;
   opacity: 1 !important;
 }
 
