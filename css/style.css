@@ -1976,3 +1976,128 @@
     transition:none;
   }
 }
+
+
+/* =========================================================
+   FINAL POLISH — PRICING OFFER + FOOTER
+   ========================================================= */
+
+/* Pricing offer list */
+.parentura-pro .pp-stack-list {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  padding: 18px 0;
+  margin-bottom: 28px;
+}
+
+.parentura-pro .pp-stack-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 15px 0;
+  color: #F3F4F6 !important;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.parentura-pro .pp-stack-item > span:first-child {
+  color: #F3F4F6 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-decoration: none !important;
+}
+
+.parentura-pro .pp-stack-item > span.val {
+  flex: 0 0 auto;
+  color: #FFB4A8 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Subtle row separation */
+.parentura-pro .pp-stack-item + .pp-stack-item {
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+
+/* =========================================================
+   FOOTER — MATCH THE PAGE
+   ========================================================= */
+
+.parentura-pro .pp-footer {
+  position: relative;
+  padding: 42px 24px 38px;
+  background: #2D3142 !important;
+  color: #E5E7EB !important;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.parentura-pro .pp-footer::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,107,91,0.35),
+    transparent
+  ) !important;
+}
+
+.parentura-pro .pp-footer .pp-container {
+  max-width: 900px;
+}
+
+.parentura-pro .pp-footer p {
+  margin: 7px 0;
+  color: #E5E7EB !important;
+  line-height: 1.7;
+}
+
+.parentura-pro .pp-footer p:first-child {
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+.parentura-pro .pp-footer p:last-child {
+  color: #AEB4C0 !important;
+  opacity: 1 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .parentura-pro .pp-stack-item {
+    align-items: flex-start;
+    gap: 12px;
+    padding: 13px 0;
+    font-size: 14px;
+  }
+
+  .parentura-pro .pp-stack-item > span:first-child {
+    min-width: 0;
+  }
+
+  .parentura-pro .pp-stack-item > span.val {
+    font-size: 12px;
+  }
+
+  .parentura-pro .pp-footer {
+    padding: 34px 20px 30px;
+  }
+
+  .parentura-pro .pp-footer p {
+    font-size: 11px;
+  }
+
+}
+
